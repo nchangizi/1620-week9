@@ -1,1 +1,39 @@
+/* /* body{
+    background-color: blue;
+}
+@media (min-width:380px) {
+    body{
+        background-color: red;
+    }
+}
+@media (min-width:600px) {
+    body{
+        background-color: green;
+    }
+} */
+body {
+  background-color: antiquewhite;
+}
+nav {
+  border: 2px solid chocolate;
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    /* margin-right: 15px;  */
+    /* padding-right: 45px;
+    padding-left: 45px; */
+    /* padding: 0 45px;
+   */
+
+  }
+  body {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:15px;
+  }
 
